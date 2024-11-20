@@ -1,0 +1,47 @@
+.circle{
+    border-radius: 150px;
+    height: 150px;
+    width: 150px;
+    background-color: green;
+    margin-bottom: 50px;
+}
+.triangle{
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid gold;
+    height: 0;
+    width: 0;
+    margin-bottom: 50px;
+}
+.star{
+    margin: 100px 80px;
+    position: relative;
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid red;
+    border-left: 100px solid transparent;
+    transform: rotate(35deg);
+    margin-left: 0px;
+}
+.star::before{
+    content: "";
+    border-left: 30px solid transparent;
+    border-bottom: 80px solid red;
+    border-right: 30px solid transparent;
+    top: -45px;
+    left: -65px;
+    position: absolute;
+    transform: rotate(-35deg);
+}
+.star::after{
+    content: "";
+    border-left: 100px solid transparent;
+    border-bottom: 70px solid red;
+    border-right: 100px solid transparent;
+    top: 3px;
+    left: -105px;
+    position: absolute;
+    transform: rotate(-70deg);
+}
